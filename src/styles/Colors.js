@@ -1,0 +1,50 @@
+export default {
+  /**
+   * COLORS PALETE APP
+   */
+
+  // THEME COLORS
+  THEME_PRIMARY: '#02C0A6',
+  THEME_SECONDARY: '#617385',
+  THEME_ACCENT: '#18CCB6',
+  BACKGROUND_DEFAULT: '#EAF1F8',
+
+  // SOLID COLORS
+  WHITE: '#ffffff',
+  BLACK: '#000000',
+  RED: '#DB340B',
+  GREY: '#bdbfc1',
+
+  // INFO COLORS TO BG AND TEXT COLORS
+  PRIMARY: '#02C0A6',
+  SECONDARY: '#bdbfc1',
+  SUCCESS: '#59A22E',
+  DANGER: '#ff0080',
+  WARNING: '#ffa000',
+  INFO: '#129BB7',
+  LIGHT: '#EAF1F8',
+  DARK: '#394D60',
+
+  // GRADIENT COLORS
+  COLOR_START: '#0098DA',
+  COLOR_CENTER: '#18CCB6',
+  COLOR_END: '#02C0A6',
+
+  // GREY COLORS
+  GREY_LIGHTEN_1: '#fafafa',
+  GREY_LIGHTEN_2: '#f5f5f5',
+  GREY_LIGHTEN_3: '#eeeeee',
+  GREY_LIGHTEN_4: '#e0e0e0',
+  GREY_LIGHTEN_5: '#bdbdbd',
+  GREY_LIGHTEN_6: '#617385',
+
+  // OPACITIES
+  OPACITY_1: 'rgba(255, 255, 255, 0.10)',
+  OPACITY_2: 'rgba(255, 255, 255, 0.20)',
+  OPACITY_3: 'rgba(255, 255, 255, 0.30)',
+  OPACITY_4: 'rgba(255, 255, 255, 0.40)',
+  OPACITY_5: 'rgba(255, 255, 255, 0.50)',
+  OPACITY_6: 'rgba(255, 255, 255, 0.60)',
+  OPACITY_7: 'rgba(255, 255, 255, 0.70)',
+  OPACITY_8: 'rgba(255, 255, 255, 0.80)',
+};
