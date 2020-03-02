@@ -4,10 +4,9 @@ import { NavigationEvents } from 'react-navigation'
 
 // COMPONENTS
 import Icon from '~/components/generic-components/icon/Icon'
-import Medipreco from '~/components/generic-components/medipreco/Medipreco'
-import SearchDefault from '~/components/generic-components/search-default/SearchDefault'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
 import SearchGradient from '~/components/generic-components/search-gradient/SearchGradient'
-import SearchItem from '~/components/pages-components/search/SearchItem'
+import SearchItem from '~/components/page-components/search/SearchItem'
 import Styles from '~/styles/Styles'
 import Colors from '~/styles/Colors'
 
@@ -106,7 +105,7 @@ export default function Search({ navigation }) {
         </View>
       </View>
       {/** Search */}
-      <Medipreco
+      <SeuProjeto
         enableContainer
         ligthContent
         backgroundStatusBar={Colors.WHITE}
@@ -143,7 +142,7 @@ export default function Search({ navigation }) {
             </View>
           </View>
         </View>
-      </Medipreco>
+      </SeuProjeto>
     </Fragment>
   )
 }

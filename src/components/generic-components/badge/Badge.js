@@ -1,9 +1,9 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React from 'react'
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
 // COMPONENTS
-import Styles from '~/styles/Styles';
-import Colors from '~/styles/Colors';
+import Styles from '~/styles/Styles'
+import Colors from '~/styles/Colors'
 
 export default function Badge({ title, backgroundType, textColor, onPress }) {
   return (
@@ -19,12 +19,12 @@ export default function Badge({ title, backgroundType, textColor, onPress }) {
           StylesComponent.pb1,
           StylesComponent.mr1,
           StylesComponent.mb1,
-          backgroundType,
+          backgroundType
         ]}>
         <Text style={[Styles.h9, textColor]}>{title}</Text>
       </View>
     </TouchableOpacity>
-  );
+  )
 }
 
 /**
@@ -32,21 +32,21 @@ export default function Badge({ title, backgroundType, textColor, onPress }) {
  */
 const StylesComponent = StyleSheet.create({
   active: {
-    backgroundColor: Colors.GREEN_LIGHTEN_1,
+    backgroundColor: Colors.GREEN_LIGHTEN_1
   },
   inactive: {
-    backgroundColor: Colors.GREY_LIGHTEN_2,
+    backgroundColor: Colors.GREY_LIGHTEN_2
   },
   pt1: {
-    paddingTop: 5,
+    paddingTop: 5
   },
   pb1: {
-    paddingBottom: 5,
+    paddingBottom: 5
   },
   mb1: {
-    marginBottom: 0,
+    marginBottom: 0
   },
   mr1: {
-    marginRight: 5,
-  },
-});
+    marginRight: 5
+  }
+})

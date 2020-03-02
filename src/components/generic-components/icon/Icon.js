@@ -1,33 +1,33 @@
-import React from 'react';
-import { View } from 'react-native';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import Entypo from 'react-native-vector-icons/Entypo';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import Feather from 'react-native-vector-icons/Feather';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import FontAwesome5Pro from 'react-native-vector-icons/FontAwesome5Pro';
-import Fontisto from 'react-native-vector-icons/Fontisto';
-import Foundation from 'react-native-vector-icons/Foundation';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import Octicons from 'react-native-vector-icons/Octicons';
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
-import Zocial from 'react-native-vector-icons/Zocial';
+import React from 'react'
+import { View } from 'react-native'
+import AntDesign from 'react-native-vector-icons/AntDesign'
+import Entypo from 'react-native-vector-icons/Entypo'
+import EvilIcons from 'react-native-vector-icons/EvilIcons'
+import Feather from 'react-native-vector-icons/Feather'
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
+import FontAwesome5Pro from 'react-native-vector-icons/FontAwesome5Pro'
+import Fontisto from 'react-native-vector-icons/Fontisto'
+import Foundation from 'react-native-vector-icons/Foundation'
+import Ionicons from 'react-native-vector-icons/Ionicons'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import Octicons from 'react-native-vector-icons/Octicons'
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
+import Zocial from 'react-native-vector-icons/Zocial'
 
-Zocial.loadFont();
-AntDesign.loadFont();
-Entypo.loadFont();
-EvilIcons.loadFont();
-Feather.loadFont();
-Fontisto.loadFont();
-Foundation.loadFont();
-Ionicons.loadFont();
-MaterialCommunityIcons.loadFont();
-MaterialIcons.loadFont();
-Octicons.loadFont();
-SimpleLineIcons.loadFont();
+Zocial.loadFont()
+AntDesign.loadFont()
+Entypo.loadFont()
+EvilIcons.loadFont()
+Feather.loadFont()
+Fontisto.loadFont()
+Foundation.loadFont()
+Ionicons.loadFont()
+MaterialCommunityIcons.loadFont()
+MaterialIcons.loadFont()
+Octicons.loadFont()
+SimpleLineIcons.loadFont()
 
 /**
  * Este componente foi criado para facilitar o
@@ -56,8 +56,8 @@ export default function Icon(props) {
     materialIcons,
     octicons,
     simpleLineIcons,
-    zocial,
-  } = props;
+    zocial
+  } = props
 
   return (
     <View onPress={onPress}>
@@ -83,7 +83,7 @@ export default function Icon(props) {
       )}
       {zocial && <Zocial name={name} size={size} color={color} />}
     </View>
-  );
+  )
 }
 
 /**

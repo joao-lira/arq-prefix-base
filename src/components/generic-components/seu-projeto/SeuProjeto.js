@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-import { View, Text, ScrollView, StatusBar, Platform } from 'react-native';
-import ShimmerPlaceHolder from 'react-native-shimmer-placeholder';
-import { Styles } from '~/styles';
-import { Colors } from '~/styles';
+import React, { Fragment } from 'react'
+import { View, Text, ScrollView, StatusBar, Platform } from 'react-native'
+import ShimmerPlaceHolder from 'react-native-shimmer-placeholder'
+import { Styles } from '~/styles'
+import { Colors } from '~/styles'
 
 // HEADERS
-import HeaderDefault from '~/components/generic-components/headers/HeaderDefault';
-import HeaderExpandable from '~/components/generic-components/headers/HeaderExpandable';
+import HeaderDefault from '~/components/generic-components/headers/HeaderDefault'
+import HeaderExpandable from '~/components/generic-components/headers/HeaderExpandable'
 
 /**
  * Este componente foi criado para representar
@@ -16,7 +16,7 @@ import HeaderExpandable from '~/components/generic-components/headers/HeaderExpa
  *
  * Veja exemplo de uso no final deste arquivo
  */
-export default function Medipreco({
+export default function SeuProjeto({
   isFeching,
   showHeader,
   showHeaderDefault,
@@ -32,7 +32,7 @@ export default function Medipreco({
   backButton,
   showRightPart,
   ligthContent,
-  backgroundStatusBar,
+  backgroundStatusBar
 }) {
   return (
     <View style={[Styles.page, backgroundPage]}>
@@ -78,7 +78,7 @@ export default function Medipreco({
             colorShimmer={[
               Colors.GREY_LIGHTEN_2,
               Colors.GREY_LIGHTEN_4,
-              Colors.GREY_LIGHTEN_2,
+              Colors.GREY_LIGHTEN_2
             ]}
           />
         </View>
@@ -92,7 +92,7 @@ export default function Medipreco({
               enableContainer ? Styles.pb2 : null,
               enableContainer ? Styles.pb2 : null,
               enableContainer ? Styles.container : null,
-              enableScreenHeight ? Styles.screenHeight : null,
+              enableScreenHeight ? Styles.screenHeight : null
             ]}>
             {children}
           </View>
@@ -102,13 +102,13 @@ export default function Medipreco({
           style={[
             enableContainer ? Styles.pt2 : null,
             enableContainer ? Styles.container : null,
-            enableScreenHeight ? Styles.screenHeight : null,
+            enableScreenHeight ? Styles.screenHeight : null
           ]}>
           {children}
         </View>
       )}
     </View>
-  );
+  )
 }
 
 /**
@@ -117,9 +117,9 @@ export default function Medipreco({
  *
 OBSERVAÇÃO: O álias de importação deve obedecer o mesmo nome de exportação do componente
 
-import Medipreco from '~/components/generic-components/medipreco/Medipreco'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
 
-<Medipreco
+<SeuProjeto
   title="Medipreço"
   subtitle="Lorem ipsum dolor sit amet"
   backButton
@@ -133,6 +133,6 @@ import Medipreco from '~/components/generic-components/medipreco/Medipreco'
 
   <JSX AQUI />
 
-</Medipreco>
+</SeuProjeto>
 
  */

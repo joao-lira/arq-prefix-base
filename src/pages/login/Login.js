@@ -13,7 +13,7 @@ import Styles from '~/styles/Styles'
 import Colors from '~/styles/Colors'
 import LinearGradient from 'react-native-linear-gradient'
 import BottomSheet from 'react-native-raw-bottom-sheet'
-import Medipreco from '~/components/generic-components/medipreco/Medipreco'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
 import TextInputDefault from '~/components/generic-components/text-input-default/TextInputDefault'
 import ButtonDefault from '~/components/generic-components/button-default/ButtonDefault'
 
@@ -123,7 +123,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <Medipreco
+      <SeuProjeto
         title=""
         showHeader={false}
         ligthContent={false}
@@ -249,7 +249,7 @@ export default class Login extends Component {
             </BottomSheet>
           </View>
         </LinearGradient>
-      </Medipreco>
+      </SeuProjeto>
     )
   }
 }

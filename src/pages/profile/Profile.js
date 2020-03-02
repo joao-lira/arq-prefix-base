@@ -4,7 +4,7 @@ import { NavigationEvents } from 'react-navigation'
 
 // COMPONENTS
 import Icon from '~/components/generic-components/icon/Icon'
-import Medipreco from '~/components/generic-components/medipreco/Medipreco'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
 import Styles from '~/styles/Styles'
 import Colors from '~/styles/Colors'
 
@@ -21,7 +21,7 @@ export default function Profile() {
   const [properties, setProperties] = useState([])
 
   return (
-    <Medipreco
+    <SeuProjeto
       enableContainer
       ligthContent
       backgroundStatusBar={Colors.WHITE}
@@ -32,7 +32,7 @@ export default function Profile() {
           // getProperties();
         }}
       />
-      <View style={[Styles.pt3, Styles.pb2]}>
+      <View style={[, Styles.pt3, Styles.pb2]}>
         <Image
           source={{
             uri: 'http://webapplayers.com/inspinia_admin-v2.9.3/img/a4.jpg'
@@ -54,6 +54,6 @@ export default function Profile() {
           <Text style={[Styles.h7, Styles.textDark]}>Meus pedidos</Text>
         </View>
       </View>
-    </Medipreco>
+    </SeuProjeto>
   )
 }

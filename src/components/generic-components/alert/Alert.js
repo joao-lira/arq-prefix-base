@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import React, { Fragment } from 'react'
+import { View, Text, TouchableOpacity } from 'react-native'
 
 // COMPONENTS
-import Icon from '~/components/generic-components/icon/Icon';
-import Styles from '~/styles/Styles';
-import Colors from '~/styles/Colors';
+import Icon from '~/components/generic-components/icon/Icon'
+import Styles from '~/styles/Styles'
+import Colors from '~/styles/Colors'
 
 export default function Alerts({
   isOpen,
@@ -13,7 +13,7 @@ export default function Alerts({
   backgroundType,
   textColor,
   iconCloseColor,
-  onPress,
+  onPress
 }) {
   return (
     <Fragment>
@@ -32,5 +32,5 @@ export default function Alerts({
         </View>
       )}
     </Fragment>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import { withNavigation } from 'react-navigation';
-import { View, Text, TouchableOpacity } from 'react-native';
+import React from 'react'
+import { withNavigation } from 'react-navigation'
+import { View, Text, TouchableOpacity } from 'react-native'
 
-import LogoMedipreco from '~/assets/generic-images/logo-medipreco.png';
-import Icon from '~/components/generic-components/icon/Icon';
-import Colors from '~/styles/Colors';
-import Styles from '~/styles/Styles';
+import LogoMedipreco from '~/assets/generic-images/logo-medipreco.png'
+import Icon from '~/components/generic-components/icon/Icon'
+import Colors from '~/styles/Colors'
+import Styles from '~/styles/Styles'
 
 /**
  * Este componente foi criado para representar
@@ -23,10 +23,10 @@ function HeaderDefault(props) {
     showRightPart,
     shadow,
     navigation
-  } = props;
+  } = props
 
   function navigateToPage(page) {
-    navigation.navigate(page);
+    navigation.navigate(page)
   }
 
   return (
@@ -73,10 +73,10 @@ function HeaderDefault(props) {
         </View>
       </View>
     </View>
-  );
+  )
 }
 
-export default withNavigation(HeaderDefault);
+export default withNavigation(HeaderDefault)
 
 /**
  *

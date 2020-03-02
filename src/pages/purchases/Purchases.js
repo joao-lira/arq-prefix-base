@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import { View, Text, FlatList } from 'react-native';
-import { NavigationEvents } from 'react-navigation';
+import React, { useState } from 'react'
+import { View, Text, FlatList } from 'react-native'
+import { NavigationEvents } from 'react-navigation'
 
 // COMPONENTS
-import Icon from '~/components/generic-components/icon/Icon';
-import Medipreco from '~/components/generic-components/medipreco/Medipreco';
-import Styles from '~/styles/Styles';
-import Colors from '~/styles/Colors';
+import Icon from '~/components/generic-components/icon/Icon'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
+import Styles from '~/styles/Styles'
+import Colors from '~/styles/Colors'
 
 const TabIcon = ({ tintColor }) => (
   <Icon evilIcons name="cart" size={25} color={tintColor} />
-);
+)
 
 Purchases.navigationOptions = {
   tabBarIcon: TabIcon,
-  title: 'Pedidos',
-};
+  title: 'Pedidos'
+}
 export default function Purchases() {
-  const [isFecthing, setIsFeching] = useState(false);
-  const [properties, setProperties] = useState([]);
+  const [isFecthing, setIsFeching] = useState(false)
+  const [properties, setProperties] = useState([])
 
   return (
-    <Medipreco
+    <SeuProjeto
       showHeader
       showHeaderDefault
       showRightPart
@@ -60,6 +60,6 @@ export default function Purchases() {
           </View>
         </View>
       </View>
-    </Medipreco>
-  );
+    </SeuProjeto>
+  )
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import {
   View,
   Text,
@@ -7,41 +7,34 @@ import {
   FlatList,
   TextInput,
   Platform,
-  TouchableOpacity,
-} from 'react-native';
-import { NavigationEvents } from 'react-navigation';
+  TouchableOpacity
+} from 'react-native'
+import { NavigationEvents } from 'react-navigation'
 
 // COMPONENTS
-import Icon from '~/components/generic-components/icon/Icon';
-import Medipreco from '~/components/generic-components/medipreco/Medipreco';
-import SearchDefault from '~/components/generic-components/search-default/SearchDefault';
-import ButtonDefault from '~/components/generic-components/button-default/ButtonDefault';
-import { Styles, Colors } from '~/styles';
-import Api from '~/services/Api';
+import Icon from '~/components/generic-components/icon/Icon'
+import SeuProjeto from '~/components/generic-components/seu-projeto/SeuProjeto'
+import SearchDefault from '~/components/generic-components/search-default/SearchDefault'
+import ButtonDefault from '~/components/generic-components/button-default/ButtonDefault'
+import { Styles, Colors } from '~/styles'
+import Api from '~/services/Api'
 
 const TabIcon = ({ tintColor }) => (
   <Icon antDesign name="home" size={20} color={tintColor} />
-);
+)
 
 Home.navigationOptions = {
   tabBarIcon: TabIcon,
-  title: 'Início',
-};
+  title: 'Início'
+}
 
 export default function Home({ navigation }) {
-  const [cpf, setCpf] = useState('');
-  const [cep, setCep] = useState('');
-
-  useEffect(() => {
-    setCpf('0000sss0');
-  }, []);
-
   function navigateToPage(page) {
-    navigation.navigate(page);
+    navigation.navigate(page)
   }
 
   return (
-    <Medipreco
+    <SeuProjeto
       title="Olá, asdfasdfas!"
       subtitle="Guará 1, QI 1 Bloco T, apto 103"
       showHeader
@@ -68,10 +61,10 @@ export default function Home({ navigation }) {
         <View style={Styles.col1}>
           <View style={Styles.mt2}>
             <Text style={[Styles.h6, Styles.bold, Styles.textDark]}>
-              Para você {cpf}
+              Para você
             </Text>
             <ButtonDefault
-              label="Salvar"
+              label="Showcase"
               labelColor={Colors.PRIMARY}
               btnColor={Styles.bgWhite}
               btnSize={Styles.btnSm}
@@ -80,12 +73,12 @@ export default function Home({ navigation }) {
               outlineColor={Styles.borderSuccess}
               btnShadow={Styles.shadowSm}
               onPress={() => {
-                navigateToPage('ShowCase');
+                navigateToPage('ShowCase')
               }}
             />
           </View>
         </View>
       </View>
-    </Medipreco>
-  );
+    </SeuProjeto>
+  )
 }
